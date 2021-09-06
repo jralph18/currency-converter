@@ -1,0 +1,53 @@
+#header-background {
+    /* background-color: #198754; */
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-image: url("images/background-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    z-index: -1;
+}
+
+#headerblock {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+#converter {
+    /* border: 1px solid lightgray; */
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px 3px rgba(255, 255, 255, 0.38);
+    background-color: white;
+}
+
+#swap-btn {
+    align-self: flex-end;
+}
+
+#converter {
+    padding: 60px 40px 40px 40px;
+}
+
+#convert-btn {
+    margin-top: 10px;
+}
+
+.spacer {
+    height: 30px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#specific-result-from {
+    color: gray;
+}
+
+#unit-result {
+    color: gray;
+}

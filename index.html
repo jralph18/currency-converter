@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Currency Converter</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script type='text/javascript' src='config.js'></script>
+        <script src="script.js"></script> 
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b23fbedb62.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header-background"></div>
+        <div id="headerblock">
+            <h1 id="headertitle" class="display-4">Currency Converter</h1>
+            <p class="lead">Currency converter for over 170 currencies!<p>
+        </div>
+        <div id="converter" class="container">
+            <form id="currencyform">
+                <div class="row">
+                    <div class="col-3">
+                        <label for="amount">Amount</label>
+                        <input name="amount" id="amount" class="form-control" type="text" placeholder="Type here..." required>
+                    </div>
+                    <div class="col-4">
+                        <label for="from">From</label>
+                        <select name="from" id="fromdropdown" class="form-select" required>
+                            <option value="" hidden>Choose starting currency...</option>
+                        </select>
+                    </div>
+                    <div class="d-flex col-1 align-items-end justify-content-center">
+                        <button type="button" id="swap-btn" class="btn btn-outline-primary align-self-end"><i class="fas fa-exchange-alt"></i></button>
+                    </div>
+                    <div class="col-4">
+                        <label for="to">To</label>
+                        <select name="to" id="todropdown" class="form-select" required>
+                            <option value="" hidden>Choose ending currency...</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row spacer"></div>
+                <div class="row">
+                    <div class="col-3">
+                        <button type="submit" id="convert-btn" class="btn btn-outline-success">Convert!</button>
+                    </div>
+                    <div id="specific-result" class="col-5">
+                        <h5 id="specific-result-from"></h5>
+                        <h3 id="specific-result-to"></h3>
+                    </div>
+                    <div id="unit-result" class="col-4">
+                        <h6 id="unit-result-from"></h6>
+                        <h6 id="unit-result-to"></h6>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </body>
+</html>
